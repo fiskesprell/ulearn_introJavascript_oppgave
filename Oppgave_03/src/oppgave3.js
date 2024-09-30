@@ -56,7 +56,7 @@ const handleKeyUp = ({ key }) => {
 
 const updateUI = (key) => {
   if (words[wordCounter]) {
-    wrongs.innerHTML = wrongCounter;
+    wrongs.textContent = `Antall feil: ${wrongCounter}`;
     letter.innerHTML = key;
     word.innerHTML = `
     <span class="green">${wordsList[wordCounter].slice(0, positionCounter)}</span>
